@@ -1,0 +1,52 @@
+.flex{
+    display:flex;
+}
+.leftimgwrap,.rightloginwrap{
+    align-items: center;
+    text-align: center;
+}
+.leftimgwrap{
+    justify-content: flex-end;
+}
+.rightloginwrap{
+    justify-content: flex-start;
+}
+.letfimg{
+    width:500px
+}
+.height100{
+    height:100%
+}
+.waveimagewrap{
+    height: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+}
+.font17{
+    font-size: 17px;
+}
+.avimg{
+    height:100px
+}
+.formtitle{
+    margin: 40px 0;
+    font-size: 40px;
+}
+ 
+.mat-form-field{
+    display: block;
+}
+
+.example-full-width {
+    width: 100%;
+}
+.justifyspacebetween{
+    justify-content: space-between;
+}

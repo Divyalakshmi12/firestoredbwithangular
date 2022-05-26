@@ -1,0 +1,38 @@
+<div *ngIf="!isSignedUp" style="height:100%">
+    <img src="assets/images/wave.png" alt="wave" class="waveimagewrap">
+    <div class="container height100">
+        <div class="login_container flex height100 justifyspacebetween">
+            <div class="flex leftimgwrap height100">
+                <img src="assets/images/bg.svg" alt="bg" class="letfimg">
+            </div>
+            <div class="flex rightloginwrap ">
+            
+                    <form class="example-form">
+                        <img src="assets/images/avatar.svg" class="avimg">
+                        <h2 class="formtitle">Welcome</h2>
+                        <div class="col-xs-12 col-sm-12">
+                            <mat-form-field>
+                                <mat-label class="font17">Enter EmailId</mat-label>
+                              
+                                <input matInput placeholder="Please enter EmailId" #emailSignUp />
+                            </mat-form-field>
+                        </div>
+                        <div class="col-xs-12 col-sm-12">
+                          <mat-form-field>
+                            <mat-label class="font17">Enter your password</mat-label>
+                          
+                            <input #passwordSignUp  matInput [type]="hide ? 'password' : 'text'" />
+                            <!-- <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon> -->
+                        </mat-form-field>
+                        <button mat-raised-button color="warn" color="warn" (click)="onSignUp(emailSignUp.value,passwordSignUp.value)">Sign UP</button>
+                        </div>
+                      
+
+                      </form>
+                    
+                  
+            </div>
+        </div>
+    </div>
+</div>
+<app-login *ngIf="isSignedUp"></app-login>

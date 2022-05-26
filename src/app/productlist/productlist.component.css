@@ -1,0 +1,15 @@
+.flex{
+    display:flex
+} 
+.justifybetween{
+    justify-content: space-between;
+}
+.aligncenter{
+    align-items: center;
+}
+.mat-card-actions {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    margin-bottom: 0;
+}

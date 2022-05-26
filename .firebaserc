@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "e-commerce-45a9b"
+  },
+  "targets": {
+    "e-commerce-45a9b": {
+      "hosting": {
+        "ecommerceapp": [
+          "e-commerce-45a9b"
+        ]
+      }
+    }
+  }
+}

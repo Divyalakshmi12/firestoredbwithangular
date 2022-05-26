@@ -1,0 +1,21 @@
+
+<div class="container">
+    <div>
+        <h2>My Cart</h2>
+    </div>
+    <table class="table">
+       
+        <tbody>
+          <tr *ngFor="let i of showCartData">
+            <td><div style="width:50px;height:50px"><img src="{{i.productImage}}" style="width:100%;height:100%" class="cartimg img-reponsive"></div></td>
+            <td>{{i.prodName}}</td>
+            <td>{{i.prodDescription}}</td>
+            <td>{{i.prodPrice | currency:'INR'}}</td>
+            <td><input type="number" min=1 value="{{i.prodQuantity}}" class="form-control" [(ngModel)]="i.prodQuantity"></td>
+            <td>{{i.prodPrice * i.prodQuantity | currency:'INR'}}</td>
+            <td><button mat-raised-button color="warn" color="warn" (click)="deleteCartData(i.id)" >x</button></td>
+          </tr>
+         
+        </tbody>
+      </table>
+</div>

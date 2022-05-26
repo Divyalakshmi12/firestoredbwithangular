@@ -1,0 +1,27 @@
+<div class="container">
+    <h2>Edit</h2>
+<form class="example-form" [formGroup]="productForm" #editprod="ngForm" (ngSubmit)="editProduct(editprod.value)">
+    <div class="col-sm-4">
+        <mat-form-field class="example-full-width" >
+        <mat-label>Enter Product Name</mat-label>
+        <input matInput placeholder="Product Name" formControlName="Name">
+        </mat-form-field>
+    </div>
+    <div class="col-sm-4">
+        <mat-form-field class="example-full-width">
+            <mat-label>Enter Product Description</mat-label>
+            <input matInput placeholder="Product Description" formControlName="Description">
+        </mat-form-field>
+    </div>
+    <div class="col-sm-4">
+        <mat-form-field class="example-full-width">
+            <mat-label>Enter Product Price</mat-label>
+            <input matInput placeholder="Product Price" formControlName="Price">
+        </mat-form-field>
+    </div>
+    <div class="col-sm-4">
+        <input type="file" (change)="chooseFile($event)" formControlName="prodImage">
+    </div>
+    <button mat-raised-button color="warn" >Update</button>
+  </form>
+</div>
